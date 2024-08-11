@@ -44,6 +44,7 @@ body {
 }
 
 #water {
+    margin: 10px;
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -130,8 +131,12 @@ body {
 
 }
 .Qlinks,.tac,#con{
+    margin-bottom: 5px;
     color: rgb(168, 180, 218);
     font-weight: bolder;
+}
+#bottom i{
+    font-size: x-large;
 }
 
 .box:hover img {
