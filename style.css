@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+#top {
+    min-height: 80vh;
+    background-image: url(./images/back-transformed.jpeg);
+    background-size: cover;
+    padding-top: 10px;
+    background-position: center;
+}
+
+.overlay {
+    display: flex;
+    margin-left: 10px;
+}
+
+#bottom {
+    padding: 10px 15%;
+    width: 100%;
+    min-height: 20vh;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0px -8px 20px rgb(0, 0, 0);
+}
+
+#arf {
+    font-family: cursive;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#water {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 255);
+    box-shadow: 0 0 15px 2px rgb(0, 0, 255), 0 0 15px 10px rgb(252, 224, 11);
+}
+
+#text {
+    color: rgb(238, 246, 16);
+    text-shadow: 0 0 15px black;
+    font-family: cursive;
+    font-size: 50px;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.bCont {
+    width: 30%;
+}
+
+#mid {
+    width: 100%;
+    position: absolute;
+    bottom: 25vh;
+}
+
+.gridBox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: 30%;
+    cursor: pointer;
+    height: 350px;
+    border-radius: 15px;
+    margin-left: 10px;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.393);
+}
+
+.box2-cont {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skin {
+    background-color: rgb(228, 182, 177);
+    opacity: 0.4;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.back2 {
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+}
+
+.frontT {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+
+}
+
+#bird,
+#animal,
+#island {
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+}
+#arf{
+    font-size: x-large;
+    color: rgb(101, 105, 221);
+    font-weight: 900;
+
+}
+.Qlinks,.tac,#con{
+    color: rgb(168, 180, 218);
+    font-weight: bolder;
+}
+
+.box:hover img {
+    /* height: 10%; */
+    transform: scale(1.5, 1.4);
+
+    transition: all 0.5s ease-in-out;
+}
+
+.box:hover {
+    opacity: 0.8;
+}
+
+@media (max-width:500px) {
+    .gridBox {
+        align-items: center;
+        margin-bottom: 0;
+        flex-direction: column;
+        /* width: 100%;          */
+    }
+
+    .box {
+        width: 90%;
+        height: 350px;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .main {
+        min-height:100%;
+    }
+    #mid{
+       top: 25vh;
+       bottom: 0;
+    }
+
+    #top {
+        min-height: 200vh;
+    }
+    #bottom {
+        flex-direction: column;
+        padding: 10px;
+        min-height: 20%;
+    }
+    .bCont{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
